@@ -279,7 +279,7 @@ def decode(imprefix,start,threshold):
 def reconstruct(imprefixL,imprefixR,threshold,camL,camR,colors):
     """
     Simple reconstruction based on triangulating matched pairs of points
-    between two view which have been encoded with a 20bit gray code.
+    between to view which have been encoded with a 20bit gray code.
 
     Parameters
     ----------
@@ -349,6 +349,8 @@ def reconstruct(imprefixL,imprefixR,threshold,camL,camR,colors):
     pts2L = np.concatenate((xx[matchL].T,yy[matchL].T),axis=0)
 
     pts3 = triangulate(pts2L,camL,pts2R,camR)
+
+    #calculating the color pixles
     cpixL=[] ; cpixR=[]
     
     for i in range(pts2L.shape[1]):
