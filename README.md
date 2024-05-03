@@ -3,3 +3,5 @@ a collection of structured light scans. A set of scans from the provided google 
 calibration, reconstruction and creation of a set of meshes. Each mesh was smoothed using a simple
 smoothing algorithm, then was aligned using meshlab. The final model was reconstructed using poisson
 reconstruction.
+
+To read the file report see, finalproject.pdf
